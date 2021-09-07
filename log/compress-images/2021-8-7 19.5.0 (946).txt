@@ -1,0 +1,7 @@
+File from: [app/images/src/boroda.png]
+
+File to: [app/images/dest/boroda.png]
+
+Compression algorithm: [pngquant]
+
+Description: Error: Command failed: D:\open\OpenServer\domains\testexample\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o app/images/dest/boroda.png app/images/src/boroda.png
