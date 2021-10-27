@@ -8,9 +8,12 @@
 </head>
 <body>
 	<h1>Test Example 1</h1>
+	<?php 
+	echo 'Hello!!!Kity';
+	?><div>
 	<!-- Подключаем оптимизированное изображение -->
 	<img src="images/dest/chabella.png" alt="Alt">
-	<img src="images/dest/abricos.png" alt="Alt">
+	<img src="images/dest/abricos.png" alt="Alt"></div>
 <!-- Подключаем скрипты проекта -->
 	<script src="js/app.min.js"></script>
 </body>
