@@ -1,20 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>testexample</title>
-	<link rel="stylesheet" href="css/app.min.css">
+<?php 
 
-</head>
-<body>
-	<h1>Test Example 1</h1>
-	<?php 
-	echo 'Hello!!!Kity';
-	?><div>
-	<!-- Подключаем оптимизированное изображение -->
-	<img src="images/dest/chabella.png" alt="Alt">
-	<img src="images/dest/abricos.png" alt="Alt"></div>
-<!-- Подключаем скрипты проекта -->
-	<script src="js/app.min.js"></script>
-</body>
-</html>
+
+
+
+ini_set('display_errors', 1);
+	error_reporting(E_ALL); //отображение ошибок
+define('ROOT', dirname(__FILE__));
+require_once(ROOT.'/components/Router.php');
+	
+	
+	echo $_SERVER['DOCUMENT_ROOT']; 
+	echo '<pre>';
+	$pizza ='Я съеллл две пиццы';
+	$pattern = '/(ц{1,})/';
+	$res = preg_match($pattern, $pizza);
+	var_dump($res);
+
+	$router = new Router;
+	$router->run();
+
+	$string = '21-11-2021';
+	$pattern = '/([0-9]{2})-([0-9]{2})-([0-9]{4})/';//не ставь пробелы, иначе не работает
+	$replacement = 'Year $3, month $2, day $1';
+	echo '<br>';
+	echo preg_replace($pattern, $replacement, $string);
+	die;
+
+	
