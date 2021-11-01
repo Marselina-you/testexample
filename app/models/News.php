@@ -1,13 +1,28 @@
 <?php 
 class News
 {
+
 	public static function getNewsItemById($id)
-	{
-		$host = 'localhost';
-		$dbname = 'beget';
-		$user = 'root';
-		$password = 'root';
-		$db = new PDO("mysql:host=$host; dbname=$dbname", $user, $password);
+
+	{ 	echo '<br>оДНА НОВОСТЬ ';
+		$id = intval($id);
+		if ($id) {
+		$db = Db::getConnection();
+
+		$result = $db->query('SELECT * FROM news WHERE id='.$id);
+		$result->setFetchMode(PDO::FETCH_ASSOC);
+		$newsItem = $result->fetch();
+
+			return $newsItem;
+
+		}
+	}
+
+
+	public static function getNewsList()
+	{	echo '<br>Список ';
+		$db = Db::getConnection();
+		
 		
 		$newsList = array();
 		$result = $db->query('SELECT * FROM news ORDER BY dates DESC LIMIT 10');
@@ -26,8 +41,5 @@ class News
 		return $newsList;
 		//запрос к бд
 	}
-	public static function getNewsList()
-	{
 
-	}
 }
