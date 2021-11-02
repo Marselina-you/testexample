@@ -12,7 +12,7 @@ class NewsController {
 	public function actionView($id)
 		{	
 			if ($id) {
-				$newsItem = News::getNewsItemById($id);
+				$newsItem = News::getNewsItemByID($id);
 			
 			
 				require_once(ROOT . '/views/news/view.php');

@@ -2,7 +2,7 @@
 class News
 {
 
-	public static function getNewsItemById($id)
+	public static function getNewsItemByID($id)
 
 	{ 	echo '<br>оДНА НОВОСТЬ ';
 		$id = intval($id);

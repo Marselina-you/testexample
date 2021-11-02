@@ -24,14 +24,7 @@
 	</div>
 
 <div id="wrapper">
-	<div id="header-wrapper">
-		<div id="header">
-			<div id="logo">
-				<h1><a href="#">Effloresce </a></h1>
-				<p>template Шаблоны для сайта <a href="http://www.ftemplate.ru/">СКАЧАТЬ</a></p>
-			</div>
-		</div>
-	</div>
+	
 	<!-- end #header -->
 	<div id="page">
 		<div id="page-bgtop">
@@ -39,8 +32,8 @@
 				<div id="content">
 					<div class="post">
 						<h2 class="title"><a href='/news/<?php echo $newsItem['id'] ;?>'><?php echo $newsItem['title'].' # '.$newsItem['id'];?></a></h2>
-						<p class="meta">Posted by <a href="#"><?php echo $newsItem['author_name'];?></a> on <?php echo $newsItem['date'];?>
-							&nbsp;&bull;&nbsp; <a href='/news/' class="permalink"> Back to HomePage</a></p>
+						<p class="meta">Опубликован on <?php echo $newsItem['dateы'];?>
+							&nbsp;&bull;&nbsp; <a href='/news/' class="permalink"> Back to Домой</a></p>
 						<div class="entry">
 							<p><img src="/template/images/pic01.jpg" width="800" height="300" alt="" /></p>
 							<p><?php echo $newsItem['short_content'];?></p>
@@ -98,9 +91,7 @@
 	</div>
 	<!-- end #page -->
 </div>
-<div id="footer">
-	<p>Copyright (c) 2013 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org">FCT</a>. Photos by Fotogrph</a>.</p>
-</div>
+
 <!-- end #footer -->
 </body>
 </html>
